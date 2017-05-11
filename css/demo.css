@@ -1,0 +1,19 @@
+/*
+this stylesheet is only for demo purposes
+*/
+
+#demopanel {left: 0; bottom: 0; position: ;z-index: 100;}
+#panel2 {position:absolute; left:-100px;}
+.panel2_button2 { position: absolute; left:0px; width:5px; cursor: pointer; top: 49px; height: 33px}
+#panel2 {position: absolute;top:57px;left:-100px;overflow: hidden;background:none; padding:4px 20px 0px 10px;width:65px;font-size:10px;color:#999; font-weight: bold;  padding: 0px}
+#panel2 h3 {border-bottom:0px solid #343434; color:#fff; padding-bottom:4px; margin-bottom:8px; font-family: Arial, Tahoma; font-size: 10px}
+#panel2 .heading {font-weight:bold; font-family:Arial, sans-serif; margin-top:10px;}
+#panel2 .selector ul {list-style: none outside none;margin: 0;padding: 0;}
+#panel2 .selector  ul li {float: left}
+#font_list {font-size:12px; max-width:120px; }
+
+#panel2 .selector  ul li.ptn-1 a{border: 0px solid #000;cursor: pointer;float: left;height: 14px;margin: 3px;width: 14px;background-color:#d31726; }
+#panel2 .selector  ul li.ptn-2 a{border: 0px solid #000;cursor: pointer;float: left;height: 14px;margin: 3px;width: 14px;background-color:#ffc600; }
+#panel2 .selector  ul li.ptn-3 a{border: 0px solid #888888;cursor: pointer;float: left;height: 14px;margin: 3px;width: 14px;background-color:#006cad; }
+#panel2 .selector  ul li.ptn-4 a{border: 0px solid #888888;cursor: pointer;float: left;height: 15px;margin: 2px;width: 15px;background-color:#1b4469;}
+#panel2 .selector  ul li.ptn-5 a{border: 0px solid #888888;cursor: pointer;float: left;height: 15px;margin: 2px;width: 15px;background-color:#8b2276;}
