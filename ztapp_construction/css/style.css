@@ -118,6 +118,24 @@
 /******************************************************************************
   Global Style 
 *******************************************************************************/
+.link-image img {
+    width: auto;
+    transition: .44s all ease;
+    opacity: .5;
+}
+
+.link-image:hover img {
+    opacity: 1;
+}
+
+.clients .title{
+    color: #fff;
+}
+
+.clients{
+    background-color: #2d5275;
+}
+
 body {
     font-family: 'Arimo', sans-serif;
     height: 100%;
@@ -2210,7 +2228,7 @@ p.tp-caption.button-block a{
 /* Owl Slider */
 .owl-prev i,
 .owl-next i{
-    color: #111;
+    color: #fff;
     font-size: 15px;
 }
 .owl-prev .fa, .owl-next .fa {
