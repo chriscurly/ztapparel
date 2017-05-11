@@ -15,9 +15,18 @@ li{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 .navbar-nav > li {
+    font: 500 14px "Ubuntu", Helvetica, Arial, sans-serif;
+    letter-spacing: .02em;
+    text-transform: uppercase;
     display: inline-block;
     float: none;
+    font-weight: 600;
 }
+
+.navbar-default .navbar-nav>li.active {
+    color : #90c33d;
+}
+
 .navbar-nav > li:last-child a{
     padding-right:0px;
 }

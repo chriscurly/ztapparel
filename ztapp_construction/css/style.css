@@ -327,11 +327,78 @@ a:focus{
 .section-title.text-left h2{
     text-align:left;
 }
+
 .section-title.text-left h1:before ,
 .section-title.text-left h2:before{
-    left: 0;
-    margin-left: 0;
+    left: 0px;
+    margin-left: 30px;
 }
+
+.section-title.text-left h1:hover::before, 
+.section-title.text-left h2:hover::before {
+    width: 105px;
+    margin-left: 0px;
+    transition: .33s all ease;
+}
+
+.section-title.text-left.process h2:before{
+    left: 0px;
+    margin-left: 50px;
+}
+
+.section-title.text-left.process h2:hover::before {
+    width: 115px;
+    margin-left: 10px;
+    transition: .33s all ease;
+}
+
+.section-title.text-center h1:hover::before,
+.section-title.text-center h2:hover::before {
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 150px;
+    transition: .33s all ease;
+}
+
+.section-title.text-center.brand h2:hover::before {
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 130px;
+    transition: .33s all ease;
+}
+
+.section-title.text-left.addinfo h2:before{
+    left: 0px;
+    margin-left: 60px;
+}
+
+.section-title.text-left.addinfo h2:hover::before {
+    width: 120px;
+    margin-left: 30px;
+    transition: .33s all ease;
+}
+
+.section-title.text-left.mandp h2:before{
+    left: 0px;
+    margin-left: 25%;
+}
+
+.section-title.text-left.mandp h2:hover::before {
+    width: 240px;
+    margin-left: 40px;
+    transition: .33s all ease;
+}
+
+.description h4:hover::before {
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 60px;
+    transition: .33s all ease;
+}
+
 .title-description {
     padding-bottom: 50px;
 }
@@ -1501,6 +1568,20 @@ i,
 .get-a-quote:hover a {
     color: #90c33d;
 }
+
+button.close i.fa.fa-times{
+    background-color: #fff;
+    color: #1e3953;
+}
+
+button.close i.fa.fa-times:hover{
+    color: #90c33d;
+}
+
+.tp-caption i.fa.fa-heart-o.fa-5x:hover{
+    color: #90c33d;
+}
+
 /* Hover Zoom Effects */
 .zoom:hover i{
     transform:scale(1.1);
@@ -1567,6 +1648,8 @@ i,
     z-index:9999;
 }
 .navbar{
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin-bottom:0;
 }
 .navbar-default .navbar-nav > li.active > a, 
@@ -1577,6 +1660,7 @@ i,
 .sticky-menu{
     z-index: inherit;	
 }
+
 
 /*--------------- Side Navigation Menu--------------*/
 .side-nav  #main{
@@ -2653,7 +2737,7 @@ div.s-feature-box.fabric{
 .figcaption i{
     color:#ffffff;
     padding:10px;
-    background:rgba(0,0,0,.8);
+    background: #2d5275;
     border-radius:50%;
 }
 .portfolio-grid .grids:hover .figcaption{
@@ -2670,7 +2754,7 @@ div.s-feature-box.fabric{
     background-color:#000000;
 }
 .img-overlay{
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+    background: none repeat scroll 0 0 rgba(116, 147, 172, 0.8);
     bottom: 0;
     left: 0;
     opacity: 0;
@@ -5003,6 +5087,8 @@ i.fa:hover{
     padding: 0px 12px;
     width: 100%;
 }
+
+
 .transparent-half-white{
     background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5) !important;
 }
