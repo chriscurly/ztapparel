@@ -118,6 +118,26 @@
 /******************************************************************************
   Global Style 
 *******************************************************************************/
+
+.submit[disabled] {
+    background-color: #2d5275;
+    color: black;
+    cursor: not-allowed;
+}
+
+@media (min-width: 992px){
+    .col-md-6.pad-60.animated.fadeInLeft.visible {
+        width: 50%;
+        padding-left: 40px;
+        padding-top: 40px;
+        padding-right: 40px;
+        padding-bottom: 0px;
+    }
+    .owl-pagination{
+        margin-top: -25px;
+    }
+}
+
 .link-image img {
     width: auto;
     transition: .44s all ease;

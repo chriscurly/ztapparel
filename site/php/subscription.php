@@ -7,6 +7,7 @@ Distrbuted under Creative Commons license
 http://creativecommons.org/licenses/by-sa/3.0/us/
 ///////////////////////////////////////////////////////////////////////*/
 	
+        $email = $_POST['subscribe_email'];
 	// Validation
 	if(!$_POST['subscribe_email']){ echo "No email address provided!"; exit(); } 
 
@@ -17,7 +18,7 @@ http://creativecommons.org/licenses/by-sa/3.0/us/
 	require_once('MCAPI.class.php');
 	
 	// grab an API Key from http://admin.mailchimp.com/account/api/
-	$api = new MCAPI('81fc03a86df8f5cf6f8f8f944da2c87e-us15');
+	$api = new MCAPI('88b3751a2d41195cad4ac7c668186a91-us15');
 	
 	// grab your List's Unique Id by going to http://admin.mailchimp.com/lists/
 	// Click the "settings" link for the list - the Unique Id is at the bottom of that page. 
@@ -27,9 +28,9 @@ http://creativecommons.org/licenses/by-sa/3.0/us/
 	
 	if($api->listSubscribe($list_id, $_POST['subscribe_email']) === true) {
 		// It worked!	
-		$msg_array = array( 'status' => 'true', 'data' => 'Success! Check your email to confirm sign up.' );
+		$msg_array = array( 'status' => 'true', 'data' => '<font color="green">Success! Check your email '. $email.' to confirm sign up.</font>' );
    		echo json_encode($msg_array);
-		//echo  'Success! Check your email to confirm sign up. <a href="index.html">Click here</a> to go back.';
+//		echo  'Success! Check your email to confirm sign up. <a href="index.html">Click here</a> to go back.';
 	} else {
 		// An error ocurred, return error message	
 		$msg_array = array( 'status' => 'false', 'data' => 'Error: ' . $api->errorMessage );

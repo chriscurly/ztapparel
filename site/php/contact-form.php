@@ -1,7 +1,7 @@
 <?php
 // Information to be modified
-$to_email = "christinahepzy@gmail.com"; // email address to which the form data will be sent
-$subject = "Contact Request"; // subject of the email that is sent
+$to_email = "christinahepzy@zcodia.com"; // email address to which the form data will be sent
+$subject = "Contact Request - Zcodia Apparels"; // subject of the email that is sent
 $thanks_page = "index.html"; // path to the thank you page following successful form submission
 $contact_page = "index.html"; // path to the HTML contact page where the form appears
 
