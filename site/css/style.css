@@ -119,6 +119,10 @@
   Global Style 
 *******************************************************************************/
 
+ul.terms > li > i.fa {
+    background-color: white;
+    color: #90c33d;
+}
 .submit[disabled] {
     background-color: #2d5275;
     color: black;
@@ -1491,20 +1495,95 @@ textarea.form-control.height-82{
     padding: 5px;
 }
 
+@media (min-width: 335px) and (max-width:392px){
+    .features-list-item.second{
+        margin-top: -21px;
+    }
+}
+
+@media (min-width: 335px) and (max-width:991px){
+    .features-list-item.fifth{
+        margin-top: 25px;
+    }
+}
+
+@media (min-width: 501px) and (max-width:991px){
+    .features-list-item.four{
+        margin-top: 21px;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1016px){
+    .features-list-item.athird{
+        margin-top: -20px;
+    }
+    .features-list-item.second{
+        margin-top: -22px;
+    }
+}
+
+@media (min-width: 1017px) and (max-width:1180px){
+    .features-list-item.second{
+        margin-top: -22px;
+    }
+}
+
+
+@media (min-width: 455px) and (max-width:482px){
+    img.girl{
+        margin-top: 5px;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1138px){
+    img.girl{
+        height: 451px;
+    }
+}
+
+i.welcomeheart{
+    font-size: 2.75em;
+    padding-right: 2%;
+    color: #90c33d;
+}
+
+.features-content.ontime{
+    margin-top: -21px;
+}
+
+i.fa.fa-tencent-weibo.fa-2x.border-black.ontimeicon{
+    top: -45px;
+}
+
 i.fa.fa-skyatlas.fa-2x.border-black.shiicon{
     top: -21px;
 }
-i.fa.fa-tencent-weibo.fa-2x.border-black.ontimeicon{
-    top: -23px;
-}
 
-li.features-list-item.shi{
-    padding-top: 0px;
-}
 
-li.features-list-item.ontime{
-    padding-top: 0px;
-}
+
+/*    i.fa.fa-skyatlas.fa-2x.border-black.shiicon{
+        top: -21px;
+    }
+    i.fa.fa-tencent-weibo.fa-2x.border-black.ontimeicon{
+        top: -23px;
+    }
+
+    i.fa.fa-connectdevelop.fa-2x.border-black{
+        top: 12px;
+    }
+
+    i.fa.fa-pied-piper.fa-2x.border-black{
+        top: -10px;
+    }*/
+
+/*    li.features-list-item.shi{
+        padding-top: 0px;
+    }
+
+    li.features-list-item.ontime{
+        padding-top: 0px;
+    }*/
+
 /* Transition Effects */
 
 .item-box:hover i{
@@ -6483,4 +6562,8 @@ img.cover{
 }
 .bg-hover-gray:hover{
     background-color:rgba(0,0,0,.6);
+}
+
+.tp-banner{
+    text-align: center;
 }
