@@ -5917,11 +5917,17 @@ i.fa:hover{
     margin:0px 0px;
     width:25%;
 }
-.grid-col-5 .grid-item,
+
 .grid-col-5 .grid-sizer {
     margin:0px 0px;
     width:20%;
 }
+
+.grid-col-5 .grid-item{
+    width: 19%;
+}
+
+
 .grid-col-6 .grid-item,
 .grid-col-6 .grid-sizer {
     margin:0px 0px;
